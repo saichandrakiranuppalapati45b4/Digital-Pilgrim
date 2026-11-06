@@ -1,0 +1,84 @@
+@import 'leaflet/dist/leaflet.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary-maroon: #7B263A;
+  --color-saffron: #D97724;
+  --color-heritage-gold: #C49A45;
+  --color-ivory: #FAF7F0;
+  --color-charcoal: #302A27;
+  --color-secondary-text: #766B60;
+  --color-border: #E9DFD0;
+}
+
+body {
+  background-color: #FAF7F0;
+  color: #302A27;
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Heritage Temple Border Accents */
+.heritage-border {
+  border: 1px solid #E9DFD0;
+}
+
+.heritage-border-gold {
+  border: 1px solid #C49A45;
+}
+
+.heritage-border-maroon {
+  border: 1px solid #7B263A;
+}
+
+.heritage-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E9DFD0;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 18px -2px rgba(123, 38, 58, 0.06);
+  transition: all 0.25s ease-in-out;
+}
+
+.heritage-card:hover {
+  box-shadow: 0 10px 28px -4px rgba(123, 38, 58, 0.12);
+  border-color: #C49A45;
+  transform: translateY(-2px);
+}
+
+/* Telugu Unicode Typography Enhancements */
+.telugu-font {
+  font-family: var(--font-noto-telugu), system-ui, sans-serif;
+  line-height: 1.7;
+}
+
+/* Temple Gopuram ornamental divider */
+.ornament-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.ornament-divider::before,
+.ornament-divider::after {
+  content: '';
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #C49A45, transparent);
+  flex: 1;
+}
+
+/* Leaflet Map overrides for heritage theme */
+.leaflet-popup-content-wrapper {
+  background: #FFFFFF !important;
+  border: 1px solid #C49A45 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 6px 20px rgba(123, 38, 58, 0.15) !important;
+}
+
+.leaflet-popup-tip {
+  background: #FFFFFF !important;
+}

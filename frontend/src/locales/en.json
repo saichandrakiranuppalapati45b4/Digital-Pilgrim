@@ -1,0 +1,143 @@
+{
+  "nav": {
+    "home": "Home",
+    "pushkaralu": "Pushkaralu",
+    "heritage": "Heritage",
+    "map": "Map",
+    "audio": "Audio Guides",
+    "announcements": "Announcements",
+    "facilities": "Facilities",
+    "admin": "Admin Portal"
+  },
+  "hero": {
+    "tagline": "Digital Pilgrim 1.0",
+    "title": "Explore Heritage. Experience Culture. Discover the Godavari.",
+    "subtitle": "Your sacred digital companion for Godavari Pushkaralu and the timeless spiritual destinations of Andhra Pradesh.",
+    "exploreHeritage": "Explore Heritage Sites",
+    "interactiveMap": "Open Interactive Map",
+    "scanQr": "Scan Heritage QR"
+  },
+  "pushkaralu": {
+    "badge": "Celestial River Festival",
+    "title": "Godavari Pushkaralu",
+    "subtitle": "A sacred celebration occurring once every 12 years when planet Jupiter enters the zodiac sign of Leo (Simha Rasi).",
+    "significanceTitle": "Spiritual Significance",
+    "significanceDesc": "Pushkaralu is believed to bring celestial purity to the sacred Godavari. Taking a holy dip at sanctified ghats washes away past deeds, bestowing blessings and spiritual liberation.",
+    "historyTitle": "Historical Tradition",
+    "historyDesc": "Observed since prehistoric times, the Pushkaram cycle unites saints, scholars, and pilgrims across Bharata. Eastern Chalukyas, Kakatiyas, and modern Andhra administrations have continuously enriched its riverfront infrastructure.",
+    "guidelinesTitle": "Pilgrim Guidelines & Safety",
+    "guidelines": [
+      "Always take holy bath only at designated steps marked by safety barricades.",
+      "Follow instructions from local police, volunteers, and certified lifeguards.",
+      "Keep ghats and the sacred river clean. Avoid single-use plastics and chemical soaps.",
+      "Supervise elderly family members and children closely amidst congregations.",
+      "Utilize digital QR audio guides at each heritage location for cultural guidance."
+    ],
+    "scheduleTitle": "Pushkaram Cycle & Auspicious Timings",
+    "scheduleDesc": "The Maha Pushkaram occurs once every 144 years, while the regular Godavari Pushkaram is celebrated every 12 years with great reverence across Rajahmundry, Kovvur, and Bhadrachalam."
+  },
+  "heritage": {
+    "title": "Discover Heritage Destinations",
+    "subtitle": "Centuries of devotion, Chalukyan architecture, and scenic Godavari riverfront shrines.",
+    "searchPlaceholder": "Search by name, deity, or region...",
+    "allCategories": "All Categories",
+    "temple": "Temples",
+    "ghat": "River Ghats",
+    "spiritual_site": "Spiritual Sites",
+    "historical_monument": "Monuments",
+    "nature_cultural": "Nature & Culture",
+    "featured": "Featured Destinations",
+    "viewDetails": "Explore Details",
+    "audioAvailable": "Audio Guide",
+    "listenAudio": "Listen Guide",
+    "getDirections": "Locate on Map",
+    "qrCode": "Location QR Code",
+    "downloadQr": "Download QR",
+    "scanPrompt": "Scan to view on your mobile device",
+    "history": "History & Heritage",
+    "significance": "Spiritual Significance",
+    "location": "Address & Coordinates",
+    "noResults": "No heritage locations match your search criteria."
+  },
+  "map": {
+    "title": "Interactive Godavari Pilgrimage Map",
+    "subtitle": "Explore verified heritage markers, river ghats, and pilgrim amenities across the Godavari region.",
+    "filterCategory": "Filter by Category",
+    "viewSite": "View Heritage Site",
+    "coordinates": "Coordinates"
+  },
+  "audio": {
+    "title": "Heritage Audio Guides",
+    "subtitle": "Immersive narration bringing ancient temple legends, architectural insights, and rituals to life.",
+    "play": "Play Audio",
+    "pause": "Pause",
+    "selectLanguage": "Audio Language",
+    "englishGuide": "English Audio",
+    "teluguGuide": "Telugu Audio",
+    "allTracks": "Available Tracks"
+  },
+  "facilities": {
+    "title": "Pilgrim Facilities Directory",
+    "subtitle": "Locate essential amenities: purified drinking water, ghat restrooms, emergency hospitals, food prasadam, and parking.",
+    "filterType": "Filter by Facility",
+    "all": "All Facilities",
+    "drinking_water": "Drinking Water",
+    "restroom": "Restrooms & Changing",
+    "hospital": "Hospitals & Medical",
+    "first_aid": "First Aid Posts",
+    "ghat": "Bathing Ghats",
+    "parking": "Vehicle Parking",
+    "food_prasadam": "Prasadam & Food",
+    "accommodation": "Accommodation",
+    "information_center": "Help Desks",
+    "police_assistance": "Police Posts",
+    "verified": "Verified Facility",
+    "operatingHours": "Hours",
+    "call": "Contact"
+  },
+  "announcements": {
+    "title": "Public Announcements & Updates",
+    "subtitle": "Official alerts, cultural schedules, and safety advisories for Godavari pilgrims.",
+    "urgent": "Urgent Alert",
+    "high": "Important Notice",
+    "medium": "General Information",
+    "low": "Update",
+    "publishedOn": "Published on"
+  },
+  "admin": {
+    "portal": "Administrator Portal",
+    "login": "Login to Admin Console",
+    "email": "Email Address",
+    "password": "Password",
+    "submit": "Sign In",
+    "logout": "Log Out",
+    "dashboard": "Dashboard Overview",
+    "heritageTab": "Heritage Locations",
+    "eventsTab": "Cultural Events",
+    "announcementsTab": "Announcements",
+    "facilitiesTab": "Pilgrim Facilities",
+    "addNew": "Add New",
+    "edit": "Edit",
+    "delete": "Delete",
+    "publish": "Publish",
+    "archive": "Archive",
+    "stats": {
+      "totalHeritage": "Total Heritage Sites",
+      "published": "Published",
+      "draft": "Drafts",
+      "events": "Cultural Events",
+      "announcements": "Announcements",
+      "facilities": "Pilgrim Facilities",
+      "audioGuides": "Audio Guides"
+    }
+  },
+  "common": {
+    "loading": "Loading sacred heritage...",
+    "error": "Failed to load content. Please try again.",
+    "back": "Back",
+    "close": "Close",
+    "save": "Save Changes",
+    "cancel": "Cancel",
+    "confirm": "Confirm Action"
+  }
+}
