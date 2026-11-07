@@ -7,8 +7,12 @@ import apiRoutes from './routes';
 import { errorHandler } from './middleware/errorMiddleware';
 import { apiLimiter } from './middleware/rateLimiter';
 import { sendError } from './utils/apiResponse';
+import { connectDB } from './config/database';
 
 const app: Application = express();
+
+// Trust Vercel's reverse proxy
+app.set('trust proxy', 1);
 
 // Security HTTP headers
 app.use(helmet());
@@ -44,6 +48,21 @@ app.use(cookieParser(env.COOKIE_SECRET));
 
 // Rate limiting for API protection
 app.use(env.API_PREFIX, apiLimiter);
+
+// Ensure MongoDB is connected before database-dependent requests.
+app.use(env.API_PREFIX, async (req, res, next) => {
+  // Allow health checks to report database status.
+  if (req.path === '/health' || req.method === 'OPTIONS') {
+    return next();
+  }
+
+  try {
+    await connectDB();
+    next();
+  } catch (error) {
+    next(error);
+  }
+});
 
 // Main API routes
 app.use(env.API_PREFIX, apiRoutes);
