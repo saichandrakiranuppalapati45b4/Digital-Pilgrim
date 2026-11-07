@@ -122,12 +122,13 @@ export const createHeritage = async (req: Request, res: Response): Promise<Respo
     }
 
     const data = parsed.data;
-    let slug = data.slug ? generateSlug(data.slug) : generateSlug(data.name.en);
+    let baseSlug = data.slug ? generateSlug(data.slug) : generateSlug(data.name.en);
+    let slug = baseSlug;
 
-    // Ensure slug uniqueness
-    const existingSlug = await Heritage.findOne({ slug });
-    if (existingSlug) {
-      slug = `${slug}-${Date.now().toString().slice(-4)}`;
+    // Ensure slug uniqueness across multiple test runs and operations
+    let counter = 1;
+    while (await Heritage.findOne({ slug })) {
+      slug = `${baseSlug}-${Date.now().toString().slice(-4)}-${counter++}`;
     }
 
     const qrCode = await generateQRCodeDataUrl(slug);
